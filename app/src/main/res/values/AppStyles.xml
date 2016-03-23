@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ValueFontStyle">
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">5pt</item>
+    </style>
+
+    <style name="TypeFontStyle">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">#c9c9c9</item>
+        <item name="android:layout_margin">5pt</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >5pt</item>
+        <item name="android:background">#700035f5</item>
+        <item name="android:shadowColor" >#70000dc4</item>
+    </style>
+</resources>

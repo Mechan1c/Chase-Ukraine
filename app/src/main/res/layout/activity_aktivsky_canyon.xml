@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130pt"
+            android:layout_height="match_parent"
+            android:src="@drawable/pic1"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="130pt"
+            android:layout_height="match_parent"
+            android:src="@drawable/pic3"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130pt"
+            android:layout_height="match_parent"
+            android:src="@drawable/pic4"/>
+
+        /> >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/bSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="3"
+            style="@style/ButtonStyle"
+            android:text="@string/bSubmit"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TypeFontStyle"
+            android:text="type"
+            android:layout_below="@+id/bSubmit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/typeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueFontStyle"
+            android:text="River canyon"
+            android:layout_below="@+id/bSubmit"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/type"
+            style="@style/TypeFontStyle"
+            android:text="location" />
+
+        <TextView
+            android:id="@+id/locationVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ValueFontStyle"
+            android:text="Mykolaivska oblast&apos;"
+            android:layout_below="@+id/typeVal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            android:layout_below="@+id/location"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:text="@string/tvDescription"
+                android:layout_below="@+id/locationVal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                style="@style/ValueFontStyle"/>
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
